@@ -1,9 +1,20 @@
 # UFO-server-location
 
-Rapport on slow pages from america and asia.
+### Rapport on slow pages from america and asia.
 
+# Problem
 Some customers have complained about the site being slow from america and asia, the app is having a lot of small request to the server, and which indicate the problem might be latency/ping.
 
+# Problem-statement
+The further away(geographicly) the customer is from our server, the higher the latency they experince.
+
+# Hypothesis
+There is a correlation between distance from client to server and the latency (responsetime from client to server)
+
+# Experiment
+We will try to prove our hypothesis by using the [ping command](https://en.wikipedia.org/wiki/Ping_(networking_utility)) 
+
+# Thoughts
 The right way to investigate this issue is to monitor latency directly on our usecase, it can be done with new relic browser insight [1], which monitors the time it takes for each request, as well as information from where in the world the request is made. 
 This data would be crucial in locating the problem.
 
