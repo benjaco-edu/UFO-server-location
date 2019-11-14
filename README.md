@@ -20,7 +20,7 @@ USA         8.8.8.8 (google dns)    avg. 20.1 ms.
 Denmark     46.36.209.7 (dandomain) avg. 13.0 ms    
 ```
 
-This small experiment seems to back our claim from the hypothosis.
+This small experiment seems to back our claim from the hypothosis. (a ping test from our location to somewhere in asia has been omitted)
 
 # Thoughts
 The right way to investigate this issue is to monitor latency directly on our usecase, it can be done with new relic browser insight [1], which monitors the time it takes for each request, as well as information from where in the world the request is made. 
