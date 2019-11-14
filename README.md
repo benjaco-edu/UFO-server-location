@@ -13,6 +13,14 @@ There is a correlation between distance from client to server and the latency (r
 
 # Experiment
 We will try to prove our hypothesis by using the [ping command](https://en.wikipedia.org/wiki/Ping_(networking_utility)) 
+We are using this tool [ipgeolocation.io](https://ipgeolocation.io/) to locate a server in USA and a server close t our location
+```
+Location    IPadr                   pingtime
+USA         8.8.8.8 (google dns)    avg. 20.1 ms.
+Denmark     46.36.209.7 (dandomain) avg. 13.0 ms    
+```
+
+This small experiment seems to back our claim from the hypothosis.
 
 # Thoughts
 The right way to investigate this issue is to monitor latency directly on our usecase, it can be done with new relic browser insight [1], which monitors the time it takes for each request, as well as information from where in the world the request is made. 
