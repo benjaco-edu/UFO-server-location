@@ -23,9 +23,6 @@ Denmark     46.36.209.7 (dandomain) avg. 13.0 ms
 This small experiment seems to back our claim from the hypothesis. (a ping test from our location to somewhere in Asia has been omitted)
 
 # Thoughts
-In order to investigate the network we have to measure not only the time measurement of package delivery to the destination, 
-but also the delay/latency which include the round-trip consisting of the initial acknowledgement process between client and server. 
-
 The right way to investigate this issue is to monitor latency directly on our usecase, it can be done with new relic browser insight [1], which monitors the time it takes for each request, as well as information from where in the world the request is made. 
 This data would be crucial in locating the problem.
 
